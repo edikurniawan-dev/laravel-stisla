@@ -19,46 +19,25 @@ const mix = require("laravel-mix");
 //     ]
 // );
 
-mix.copy(
-    [
-        "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "./node_modules/font-awesome/css/font-awesome.css",
-        "./node_modules/flag-icon-css/css/flag-icon.min.css",
-        "./node_modules/jqvmap/dist/jqvmap.min.css",
-        "./node_modules/summernote/dist/summernote-bs4.min.css",
-        "./node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
-        "./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
-        "./node_modules/flag-icon-css/css/flag-icon.css",
-        "./node_modules/weathericons/css/weather-icons.min.css",
-        "./node_modules/weathericons/css/weather-icons-wind.min.css",
-    ],
-    "public/css/library"
-);
+let plugins = [
+    "bootstrap",
+    "flag-icon-css",
+    "jqvmap",
+    "summernote",
+    "owl.carousel",
+    "weathericons",
+    "jquery",
+    "popper.js",
+    "jquery.nicescroll",
+    "tooltip.js",
+    "moment",
+    "jquery-sparkline",
+    "summernote",
+    "chocolat",
+    "chart.js",
+    "simpleweather",
+];
 
-mix.copy("./node_modules/flag-icon-css/flags", "public/css/flags");
-mix.copy("./node_modules//summernote/dist/font", "public/css/library/font");
-
-mix.copy(
-    [
-        "./node_modules/jquery/dist/jquery.min.js",
-        "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "./node_modules/bootstrap/dist/js/bootstrap.min.js.map",
-        "./node_modules/popper.js/dist/umd/popper.js",
-        "./node_modules/popper.js/dist/umd/popper.js.map",
-        "./node_modules/jquery.nicescroll/dist/jquery.nicescroll.min.js",
-        "./node_modules/tooltip.js/dist/umd/tooltip.min.js",
-        "./node_modules/tooltip.js/dist/umd/tooltip.min.js.map",
-        "./node_modules/moment/min/moment.min.js",
-        "./node_modules/moment/min/moment.min.js.map",
-        "./node_modules/jquery-sparkline/jquery.sparkline.min.js",
-        "./node_modules/summernote/dist/summernote-bs4.js",
-        "./node_modules/summernote/dist/summernote-bs4.js.map",
-        "./node_modules/chocolat/dist/js/jquery.chocolat.min.js",
-        "./node_modules/chart.js/dist/Chart.min.js",
-        "./node_modules/owl.carousel/dist/owl.carousel.min.js",
-        "./node_modules/simpleweather/jquery.simpleWeather.min.js",
-        "./node_modules/jqvmap/dist/jquery.vmap.min.js",
-        "./node_modules/jqvmap/dist/maps/jquery.vmap.world.js",
-    ],
-    "public/js/library"
-);
+plugins.forEach((plugin) => {
+    mix.copy("./node_modules/" + plugin, "public/library/" + plugin);
+});

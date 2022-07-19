@@ -8,76 +8,128 @@
         </div>
         <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
-            <li class="nav-item dropdown active">
+            <li class="nav-item dropdown {{ $type_menu === 'dashboard' ? 'active' : '' }}">
                 <a href="#"
                     class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
                 <ul class="dropdown-menu">
-                    <li class='{{ Request::is('general-dashboard') ? 'active' : '' }}'><a class="nav-link"
-                            href="{{ url('general-dashboard') }}">General Dashboard</a></li>
-                    <li class="{{ Request::is('ecommerce-dashboard') ? 'active' : '' }}"><a class="nav-link"
-                            href="{{ url('ecommerce-dashboard') }}">Ecommerce Dashboard</a></li>
+                    <li class='{{ Request::is('general-dashboard') ? 'active' : '' }}'>
+                        <a class="nav-link"
+                            href="{{ url('general-dashboard') }}">General Dashboard</a>
+                    </li>
+                    <li class="{{ Request::is('ecommerce-dashboard') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('ecommerce-dashboard') }}">Ecommerce Dashboard</a>
+                    </li>
                 </ul>
             </li>
             <li class="menu-header">Starter</li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {{ $type_menu === 'layout' ? 'active' : '' }}">
                 <a href="#"
                     class="nav-link has-dropdown"
                     data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Layout</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link"
-                            href="layout-default.html">Default Layout</a></li>
-                    <li><a class="nav-link"
-                            href="layout-transparent.html">Transparent Sidebar</a></li>
-                    <li><a class="nav-link"
-                            href="layout-top-navigation.html">Top Navigation</a></li>
+                    <li class="{{ Request::is('default-layout') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('default-layout') }}">Default Layout</a>
+                    </li>
+                    <li class="{{ Request::is('transparent-sidebar') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('transparent-sidebar') }}">Transparent Sidebar</a>
+                    </li>
+                    <li class="{{ Request::is('layout-top-navigation') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('layout-top-navigation') }}">Top Navigation</a>
+                    </li>
                 </ul>
             </li>
-            <li><a class="nav-link"
-                    href="blank.html"><i class="far fa-square"></i> <span>Blank Page</span></a></li>
-            <li class="nav-item dropdown">
+            <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                <a class="nav-link"
+                    href="{{ url('blank-page') }}"><i class="far fa-square"></i> <span>Blank Page</span></a>
+            </li>
+            <li class="nav-item dropdown {{ $type_menu === 'bootstrap' ? 'active' : '' }}">
                 <a href="#"
                     class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>Bootstrap</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link"
-                            href="bootstrap-alert.html">Alert</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-badge.html">Badge</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-breadcrumb.html">Breadcrumb</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-buttons.html">Buttons</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-card.html">Card</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-carousel.html">Carousel</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-collapse.html">Collapse</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-dropdown.html">Dropdown</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-form.html">Form</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-list-group.html">List Group</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-media-object.html">Media Object</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-modal.html">Modal</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-nav.html">Nav</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-navbar.html">Navbar</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-pagination.html">Pagination</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-popover.html">Popover</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-progress.html">Progress</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-table.html">Table</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-tooltip.html">Tooltip</a></li>
-                    <li><a class="nav-link"
-                            href="bootstrap-typography.html">Typography</a></li>
+                    <li class="{{ Request::is('alert') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Alert</a>
+                    </li>
+                    <li class="{{ Request::is('badge') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('badge') }}">Badge</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Breadcrumb</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Buttons</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Card</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Carousel</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Collapse</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Dropdown</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Form</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">List Group</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Media Object</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Modal</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Nav</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Navbar</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Pagination</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Popover</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Progress</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Table</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Tooltip</a>
+                    </li>
+                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('alert') }}">Typography</a>
+                    </li>
                 </ul>
             </li>
             <li class="menu-header">Stisla</li>

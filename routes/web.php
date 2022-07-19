@@ -13,9 +13,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Dashboard
 Route::get('/ecommerce-dashboard', function () {
-    return view('pages.ecommerce-dashboard');
+    return view('pages.ecommerce-dashboard', ['type_menu' => 'dashboard']);
 });
+
 Route::get('/general-dashboard', function () {
-    return view('pages.general-dashboard');
+    return view('pages.general-dashboard', ['type_menu' => 'dashboard']);
+});
+
+// Layout
+Route::get('/default-layout', function () {
+    return view('pages.default-layout', ['type_menu' => 'layout']);
+});
+
+// Blank Page
+Route::get('/blank-page', function () {
+    return view('pages.blank-page', ['type_menu' => '']);
+});
+
+// Bootstrap
+Route::get('/alert', function () {
+    return view('pages.alert', ['type_menu' => 'bootstrap']);
+});
+Route::get('/badge', function () {
+    return view('pages.badge', ['type_menu' => 'bootstrap']);
 });

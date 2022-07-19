@@ -1,16 +1,18 @@
 @extends('layouts.app')
 
+@section('title', 'Ecommerce Dashboard')
+
 @push('style')
     <link rel="stylesheet"
-        href="{{ asset('css/library/jqvmap.min.css') }}">
+        href="{{ asset('library/jqvmap/dist/jqvmap.min.css') }}">
     <link rel="stylesheet"
-        href="{{ asset('css/library/summernote-bs4.min.css') }}">
+        href="{{ asset('library/summernote/dist/summernote-bs4.min.css') }}">
     <link rel="stylesheet"
-        href="{{ asset('css/library/owl.carousel.min.css') }}">
+        href="{{ asset('library/owl.carousel/dist/assets/owl.carousel.min.css') }}">
     <link rel="stylesheet"
-        href="{{ asset('css/library/owl.theme.default.min.css') }}">
+        href="{{ asset('library/owl.carousel/dist/assets/owl.theme.default.min.css') }}">
     <link rel="stylesheet"
-        href="{{ asset('css/library/flag-icon.min.css') }}">
+        href="{{ asset('library/flag-icon-css/css/flag-icon.min.css') }}">
 @endpush
 
 @section('main')
@@ -597,11 +599,11 @@
 @endsection
 
 @push('scripts')
-    <script src="{{ asset('js/library/jquery.sparkline.min.js') }}"></script>
-    <script src="{{ asset('js/library/Chart.min.js') }}"></script>
-    <script src="{{ asset('js/library/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('js/library/summernote-bs4.js') }}"></script>
-    <script src="{{ asset('js/library/jquery.chocolat.min.js') }}"></script>
+    <script src="{{ asset('library/jquery-sparkline/jquery.sparkline.min.js') }}"></script>
+    <script src="{{ asset('library/chart.js/dist/Chart.js') }}"></script>
+    <script src="{{ asset('library/owl.carousel/dist/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('library/summernote/dist/summernote-bs4.min.js') }}"></script>
+    <script src="{{ asset('library/chocolat/dist/js/jquery.chocolat.min.js') }}"></script>
 
     <!-- Page Specific JS File -->
     <script src="{{ asset('js/page/index.js') }}"></script>
