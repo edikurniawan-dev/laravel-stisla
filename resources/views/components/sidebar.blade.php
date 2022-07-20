@@ -58,77 +58,77 @@
                         <a class="nav-link"
                             href="{{ url('badge') }}">Badge</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('breadcrumb') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Breadcrumb</a>
+                            href="{{ url('breadcrumb') }}">Breadcrumb</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('button') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Buttons</a>
+                            href="{{ url('button') }}">Buttons</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('card') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Card</a>
+                            href="{{ url('card') }}">Card</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('carousel') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Carousel</a>
+                            href="{{ url('carousel') }}">Carousel</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('collapse') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Collapse</a>
+                            href="{{ url('collapse') }}">Collapse</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('dropdown') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Dropdown</a>
+                            href="{{ url('dropdown') }}">Dropdown</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('form') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Form</a>
+                            href="{{ url('form') }}">Form</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('list-group') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">List Group</a>
+                            href="{{ url('list-group') }}">List Group</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('media-object') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Media Object</a>
+                            href="{{ url('media-object') }}">Media Object</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('modal') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Modal</a>
+                            href="{{ url('modal') }}">Modal</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('nav') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Nav</a>
+                            href="{{ url('nav') }}">Nav</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('navbar') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Navbar</a>
+                            href="{{ url('navbar') }}">Navbar</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('pagination') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Pagination</a>
+                            href="{{ url('pagination') }}">Pagination</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('popover') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Popover</a>
+                            href="{{ url('popover') }}">Popover</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('progress') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Progress</a>
+                            href="{{ url('progress') }}">Progress</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('table') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Table</a>
+                            href="{{ url('table') }}">Table</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('tooltip') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Tooltip</a>
+                            href="{{ url('tooltip') }}">Tooltip</a>
                     </li>
-                    <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
+                    <li class="{{ Request::is('typography') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('alert') }}">Typography</a>
+                            href="{{ url('typography') }}">Typography</a>
                     </li>
                 </ul>
             </li>

@@ -27,15 +27,17 @@ let plugins = [
     "owl.carousel",
     "weathericons",
     "jquery",
+    "jquery-ui-dist",
+    "jquery-sparkline",
     "popper.js",
     "jquery.nicescroll",
     "tooltip.js",
     "moment",
-    "jquery-sparkline",
     "summernote",
     "chocolat",
     "chart.js",
     "simpleweather",
+    "prismjs",
 ];
 
 plugins.forEach((plugin) => {
