@@ -40,6 +40,14 @@ let plugins = [
     "prismjs",
     "dropzone",
     "bootstrap-social",
+    "cleave.js",
+    "bootstrap-daterangepicker",
+    "bootstrap-colorpicker",
+    "bootstrap-timepicker",
+    "bootstrap-tagsinput",
+    "select2",
+    "selectric",
+    "codemirror",
 ];
 
 plugins.forEach((plugin) => {

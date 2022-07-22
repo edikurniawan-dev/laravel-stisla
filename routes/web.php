@@ -135,3 +135,14 @@ Route::get('/components-user', function () {
 Route::get('/components-wizard', function () {
     return view('pages.components-wizard', ['type_menu' => 'components']);
 });
+
+// forms
+Route::get('/forms-advanced-form', function () {
+    return view('pages.forms-advanced-form', ['type_menu' => 'forms']);
+});
+Route::get('/forms-editor', function () {
+    return view('pages.forms-editor', ['type_menu' => 'forms']);
+});
+Route::get('/forms-validation', function () {
+    return view('pages.forms-validation', ['type_menu' => 'forms']);
+});

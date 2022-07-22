@@ -192,16 +192,22 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {{ $type_menu === 'forms' ? 'active' : '' }}">
                 <a href="#"
                     class="nav-link has-dropdown"><i class="far fa-file-alt"></i> <span>Forms</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link"
-                            href="forms-advanced-form.html">Advanced Form</a></li>
-                    <li><a class="nav-link"
-                            href="forms-editor.html">Editor</a></li>
-                    <li><a class="nav-link"
-                            href="forms-validation.html">Validation</a></li>
+                    <li class="{{ Request::is('forms-advanced-form') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('forms-advanced-form') }}">Advanced Form</a>
+                    </li>
+                    <li class="{{ Request::is('forms-editor') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('forms-editor') }}">Editor</a>
+                    </li>
+                    <li class="{{ Request::is('forms-validation') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('forms-validation') }}">Validation</a>
+                    </li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
