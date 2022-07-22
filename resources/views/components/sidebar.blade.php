@@ -174,21 +174,21 @@
                         <a class="nav-link"
                             href="{{ url('components-statistic') }}">Statistic</a>
                     </li>
-                    <li class="{{ Request::is('components-article') ? 'active' : '' }}">
+                    <li class="{{ Request::is('components-tab') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('components-article') }}">Tab</a>
+                            href="{{ url('components-tab') }}">Tab</a>
                     </li>
-                    <li class="{{ Request::is('components-article') ? 'active' : '' }}">
+                    <li class="{{ Request::is('components-table') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('components-article') }}">Table</a>
+                            href="{{ url('components-table') }}">Table</a>
                     </li>
-                    <li class="{{ Request::is('components-article') ? 'active' : '' }}">
+                    <li class="{{ Request::is('components-user') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('components-article') }}">User</a>
+                            href="{{ url('components-user') }}">User</a>
                     </li>
-                    <li class="{{ Request::is('components-article') ? 'active' : '' }}">
+                    <li class="{{ Request::is('components-wizard') ? 'active' : '' }}">
                         <a class="nav-link beep beep-sidebar"
-                            href="{{ url('components-article') }}">Wizard</a>
+                            href="{{ url('components-wizard') }}">Wizard</a>
                     </li>
                 </ul>
             </li>

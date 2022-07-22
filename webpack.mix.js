@@ -39,6 +39,7 @@ let plugins = [
     "simpleweather",
     "prismjs",
     "dropzone",
+    "bootstrap-social",
 ];
 
 plugins.forEach((plugin) => {

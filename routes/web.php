@@ -123,3 +123,15 @@ Route::get('/components-pricing', function () {
 Route::get('/components-statistic', function () {
     return view('pages.components-statistic', ['type_menu' => 'components']);
 });
+Route::get('/components-tab', function () {
+    return view('pages.components-tab', ['type_menu' => 'components']);
+});
+Route::get('/components-table', function () {
+    return view('pages.components-table', ['type_menu' => 'components']);
+});
+Route::get('/components-user', function () {
+    return view('pages.components-user', ['type_menu' => 'components']);
+});
+Route::get('/components-wizard', function () {
+    return view('pages.components-wizard', ['type_menu' => 'components']);
+});
