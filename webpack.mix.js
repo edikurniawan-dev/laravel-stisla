@@ -48,6 +48,12 @@ let plugins = [
     "select2",
     "selectric",
     "codemirror",
+    "fullcalendar",
+    "datatables",
+    "ionicons201",
+    "sweetalert",
+    "izitoast",
+    "weathericons",
 ];
 
 plugins.forEach((plugin) => {

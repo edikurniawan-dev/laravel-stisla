@@ -146,3 +146,44 @@ Route::get('/forms-editor', function () {
 Route::get('/forms-validation', function () {
     return view('pages.forms-validation', ['type_menu' => 'forms']);
 });
+
+// google maps
+// belum tersedia
+
+// modules
+Route::get('/modules-calendar', function () {
+    return view('pages.modules-calendar', ['type_menu' => 'modules']);
+});
+Route::get('/modules-chartjs', function () {
+    return view('pages.modules-chartjs', ['type_menu' => 'modules']);
+});
+Route::get('/modules-datatables', function () {
+    return view('pages.modules-datatables', ['type_menu' => 'modules']);
+});
+Route::get('/modules-flag', function () {
+    return view('pages.modules-flag', ['type_menu' => 'modules']);
+});
+Route::get('/modules-font-awesome', function () {
+    return view('pages.modules-font-awesome', ['type_menu' => 'modules']);
+});
+Route::get('/modules-ion-icons', function () {
+    return view('pages.modules-ion-icons', ['type_menu' => 'modules']);
+});
+Route::get('/modules-owl-carousel', function () {
+    return view('pages.modules-owl-carousel', ['type_menu' => 'modules']);
+});
+Route::get('/modules-sparkline', function () {
+    return view('pages.modules-sparkline', ['type_menu' => 'modules']);
+});
+Route::get('/modules-sweet-alert', function () {
+    return view('pages.modules-sweet-alert', ['type_menu' => 'modules']);
+});
+Route::get('/modules-toastr', function () {
+    return view('pages.modules-toastr', ['type_menu' => 'modules']);
+});
+Route::get('/modules-vector-map', function () {
+    return view('pages.modules-vector-map', ['type_menu' => 'modules']);
+});
+Route::get('/modules-weather-icon', function () {
+    return view('pages.modules-weather-icon', ['type_menu' => 'modules']);
+});

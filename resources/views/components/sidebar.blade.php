@@ -225,34 +225,58 @@
                     <li><a href="gmaps-simple.html">Simple</a></li>
                 </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {{ $type_menu === 'modules' ? 'active' : '' }}">
                 <a href="#"
                     class="nav-link has-dropdown"><i class="fas fa-plug"></i> <span>Modules</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link"
-                            href="modules-calendar.html">Calendar</a></li>
-                    <li><a class="nav-link"
-                            href="modules-chartjs.html">ChartJS</a></li>
-                    <li><a class="nav-link"
-                            href="modules-datatables.html">DataTables</a></li>
-                    <li><a class="nav-link"
-                            href="modules-flag.html">Flag</a></li>
-                    <li><a class="nav-link"
-                            href="modules-font-awesome.html">Font Awesome</a></li>
-                    <li><a class="nav-link"
-                            href="modules-ion-icons.html">Ion Icons</a></li>
-                    <li><a class="nav-link"
-                            href="modules-owl-carousel.html">Owl Carousel</a></li>
-                    <li><a class="nav-link"
-                            href="modules-sparkline.html">Sparkline</a></li>
-                    <li><a class="nav-link"
-                            href="modules-sweet-alert.html">Sweet Alert</a></li>
-                    <li><a class="nav-link"
-                            href="modules-toastr.html">Toastr</a></li>
-                    <li><a class="nav-link"
-                            href="modules-vector-map.html">Vector Map</a></li>
-                    <li><a class="nav-link"
-                            href="modules-weather-icon.html">Weather Icon</a></li>
+                    <li class="{{ Request::is('modules-calendar') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('modules-calendar') }}">Calendar</a>
+                    </li>
+                    <li class="{{ Request::is('modules-chartjs') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('modules-chartjs') }}">ChartJS</a>
+                    </li>
+                    <li class="{{ Request::is('modules-datatables') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('modules-datatables') }}">DataTables</a>
+                    </li>
+                    <li class="{{ Request::is('modules-flag') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('modules-flag') }}">Flag</a>
+                    </li>
+                    <li class="{{ Request::is('modules-font-awesome') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('modules-font-awesome') }}">Font Awesome</a>
+                    </li>
+                    <li class="{{ Request::is('modules-ion-icons') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('modules-ion-icons') }}">Ion Icons</a>
+                    </li>
+                    <li class="{{ Request::is('modules-owl-carousel') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('modules-owl-carousel') }}">Owl Carousel</a>
+                    </li>
+                    <li class="{{ Request::is('modules-sparkline') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('modules-sparkline') }}">Sparkline</a>
+                    </li>
+                    <li class="{{ Request::is('modules-sweet-alert') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('modules-sweet-alert') }}">Sweet Alert</a>
+                    </li>
+                    <li class="{{ Request::is('modules-toastr') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('modules-toastr') }}">Toastr</a>
+                    </li>
+                    <li class="{{ Request::is('modules-vector-map') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('modules-vector-map') }}">Vector Map</a>
+                    </li>
+                    <li class="{{ Request::is('modules-weather-icon') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('modules-weather-icon') }}">Weather Icon</a>
+                    </li>
                 </ul>
             </li>
             <li class="menu-header">Pages</li>
