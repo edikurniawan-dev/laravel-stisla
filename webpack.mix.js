@@ -38,6 +38,7 @@ let plugins = [
     "chart.js",
     "simpleweather",
     "prismjs",
+    "dropzone",
 ];
 
 plugins.forEach((plugin) => {

@@ -158,21 +158,21 @@
                         <a class="nav-link"
                             href="{{ url('components-gallery') }}">Gallery</a>
                     </li>
-                    <li class="{{ Request::is('components-article') ? 'active' : '' }}">
+                    <li class="{{ Request::is('components-hero') ? 'active' : '' }}">
                         <a class="nav-link beep beep-sidebar"
-                            href="{{ url('components-article') }}">Hero</a>
+                            href="{{ url('components-hero') }}">Hero</a>
                     </li>
-                    <li class="{{ Request::is('components-article') ? 'active' : '' }}">
+                    <li class="{{ Request::is('components-multiple-upload') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('components-article') }}">Multiple Upload</a>
+                            href="{{ url('components-multiple-upload') }}">Multiple Upload</a>
                     </li>
-                    <li class="{{ Request::is('components-article') ? 'active' : '' }}">
+                    <li class="{{ Request::is('components-pricing') ? 'active' : '' }}">
                         <a class="nav-link beep beep-sidebar"
-                            href="{{ url('components-article') }}">Pricing</a>
+                            href="{{ url('components-pricing') }}">Pricing</a>
                     </li>
-                    <li class="{{ Request::is('components-article') ? 'active' : '' }}">
+                    <li class="{{ Request::is('components-statistic') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('components-article') }}">Statistic</a>
+                            href="{{ url('components-statistic') }}">Statistic</a>
                     </li>
                     <li class="{{ Request::is('components-article') ? 'active' : '' }}">
                         <a class="nav-link"
