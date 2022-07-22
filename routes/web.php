@@ -93,3 +93,21 @@ Route::get('/tooltip', function () {
 Route::get('/typography', function () {
     return view('pages.typography', ['type_menu' => 'bootstrap']);
 });
+
+
+// components
+Route::get('/components-article', function () {
+    return view('pages.components-article', ['type_menu' => 'components']);
+});
+Route::get('/components-avatar', function () {
+    return view('pages.components-avatar', ['type_menu' => 'components']);
+});
+Route::get('/components-chat-box', function () {
+    return view('pages.components-chat-box', ['type_menu' => 'components']);
+});
+Route::get('/components-empty-state', function () {
+    return view('pages.components-empty-state', ['type_menu' => 'components']);
+});
+Route::get('/components-gallery', function () {
+    return view('pages.components-gallery', ['type_menu' => 'components']);
+});
