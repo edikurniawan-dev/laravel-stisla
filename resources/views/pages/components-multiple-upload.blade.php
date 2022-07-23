@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Blank Page')
+@section('title', 'Multiple Upload')
 
 @push('style')
+    <!-- CSS Libraries -->
     <link rel="stylesheet"
         href="{{ asset('library/dropzone/dist/dropzone.css') }}">
 @endpush

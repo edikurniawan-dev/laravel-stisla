@@ -166,4 +166,6 @@
 @push('scripts')
     <!-- JS Libraies -->
     <script src="{{ asset('library/summernote/dist/summernote-bs4.js') }}"></script>
+
+    <!-- Page Specific JS File -->
 @endpush

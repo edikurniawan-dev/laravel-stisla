@@ -3,6 +3,7 @@
 @section('title', 'Card')
 
 @push('style')
+    <!-- CSS Libraries -->
     <link rel="stylesheet"
         href="{{ asset('library/chocolat/dist/css/chocolat.css') }}">
 @endpush
@@ -464,6 +465,9 @@
 @endsection
 
 @push('scripts')
+    <!-- JS Libraies -->
     <script src="{{ asset('library/chocolat/dist/js/jquery.chocolat.min.js') }}"></script>
     <script src="{{ asset('library/jquery-ui-dist/jquery-ui.min.css') }}"></script>
+
+    <!-- Page Specific JS File -->
 @endpush

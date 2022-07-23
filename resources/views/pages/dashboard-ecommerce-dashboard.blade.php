@@ -3,6 +3,7 @@
 @section('title', 'Ecommerce Dashboard')
 
 @push('style')
+    <!-- CSS Libraries -->
     <link rel="stylesheet"
         href="{{ asset('library/jqvmap/dist/jqvmap.min.css') }}">
     <link rel="stylesheet"
@@ -599,6 +600,7 @@
 @endsection
 
 @push('scripts')
+    <!-- JS Libraies -->
     <script src="{{ asset('library/jquery-sparkline/jquery.sparkline.min.js') }}"></script>
     <script src="{{ asset('library/chart.js/dist/Chart.js') }}"></script>
     <script src="{{ asset('library/owl.carousel/dist/owl.carousel.min.js') }}"></script>

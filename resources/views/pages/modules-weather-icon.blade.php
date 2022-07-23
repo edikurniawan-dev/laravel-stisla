@@ -1701,4 +1701,7 @@
 @endsection
 
 @push('scripts')
+    <!-- JS Libraies -->
+
+    <!-- Page Specific JS File -->
 @endpush

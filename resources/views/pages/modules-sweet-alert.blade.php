@@ -3,6 +3,7 @@
 @section('title', 'Sweet Alert')
 
 @push('style')
+    <!-- CSS Libraries -->
 @endpush
 
 @section('main')

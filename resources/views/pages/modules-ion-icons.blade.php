@@ -2236,6 +2236,8 @@
 @endsection
 
 @push('scripts')
+    <!-- JS Libraies -->
+
     <!-- Page Specific JS File -->
     <script src="{{ asset('js/page/modules-ion-icons.js') }}"></script>
 @endpush

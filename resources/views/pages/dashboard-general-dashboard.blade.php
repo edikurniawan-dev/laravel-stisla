@@ -3,6 +3,7 @@
 @section('title', 'General Dashboard')
 
 @push('style')
+    <!-- CSS Libraries -->
     <link rel="stylesheet"
         href="{{ asset('library/jqvmap/dist/jqvmap.min.css') }}">
     <link rel="stylesheet"
@@ -805,6 +806,7 @@
 @endsection
 
 @push('scripts')
+    <!-- JS Libraies -->
     <script src="{{ asset('library/simpleweather/jquery.simpleWeather.min.js') }}"></script>
     <script src="{{ asset('library/chart.js/dist/Chart.min.js') }}"></script>
     <script src="{{ asset('library/jqvmap/dist/jquery.vmap.min.js') }}"></script>

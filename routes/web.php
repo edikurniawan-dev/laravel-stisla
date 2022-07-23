@@ -13,20 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('/', '/general-dashboard');
+Route::redirect('/', '/dashboard-general-dashboard');
 
 // Dashboard
-Route::get('/general-dashboard', function () {
-    return view('pages.general-dashboard', ['type_menu' => 'dashboard']);
+Route::get('/dashboard-general-dashboard', function () {
+    return view('pages.dashboard-general-dashboard', ['type_menu' => 'dashboard']);
 });
-Route::get('/ecommerce-dashboard', function () {
-    return view('pages.ecommerce-dashboard', ['type_menu' => 'dashboard']);
+Route::get('/dashboard-ecommerce-dashboard', function () {
+    return view('pages.dashboard-ecommerce-dashboard', ['type_menu' => 'dashboard']);
 });
 
 
 // Layout
-Route::get('/default-layout', function () {
-    return view('pages.default-layout', ['type_menu' => 'layout']);
+Route::get('/layout-default-layout', function () {
+    return view('pages.layout-default-layout', ['type_menu' => 'layout']);
 });
 
 // Blank Page
@@ -35,65 +35,65 @@ Route::get('/blank-page', function () {
 });
 
 // Bootstrap
-Route::get('/alert', function () {
-    return view('pages.alert', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-alert', function () {
+    return view('pages.bootstrap-alert', ['type_menu' => 'bootstrap']);
 });
-Route::get('/badge', function () {
-    return view('pages.badge', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-badge', function () {
+    return view('pages.bootstrap-badge', ['type_menu' => 'bootstrap']);
 });
-Route::get('/breadcrumb', function () {
-    return view('pages.breadcrumb', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-breadcrumb', function () {
+    return view('pages.bootstrap-breadcrumb', ['type_menu' => 'bootstrap']);
 });
-Route::get('/buttons', function () {
-    return view('pages.buttons', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-buttons', function () {
+    return view('pages.bootstrap-buttons', ['type_menu' => 'bootstrap']);
 });
-Route::get('/card', function () {
-    return view('pages.card', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-card', function () {
+    return view('pages.bootstrap-card', ['type_menu' => 'bootstrap']);
 });
-Route::get('/carousel', function () {
-    return view('pages.carousel', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-carousel', function () {
+    return view('pages.bootstrap-carousel', ['type_menu' => 'bootstrap']);
 });
-Route::get('/collapse', function () {
-    return view('pages.collapse', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-collapse', function () {
+    return view('pages.bootstrap-collapse', ['type_menu' => 'bootstrap']);
 });
-Route::get('/dropdown', function () {
-    return view('pages.dropdown', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-dropdown', function () {
+    return view('pages.bootstrap-dropdown', ['type_menu' => 'bootstrap']);
 });
-Route::get('/form', function () {
-    return view('pages.form', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-form', function () {
+    return view('pages.bootstrap-form', ['type_menu' => 'bootstrap']);
 });
-Route::get('/list-group', function () {
-    return view('pages.list-group', ['type_menu' => 'bootstrap']);
+Route::get('/list-bootstrap-group', function () {
+    return view('pages.list-bootstrap-group', ['type_menu' => 'bootstrap']);
 });
-Route::get('/media-object', function () {
-    return view('pages.media-object', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-media-object', function () {
+    return view('pages.bootstrap-media-object', ['type_menu' => 'bootstrap']);
 });
-Route::get('/modal', function () {
-    return view('pages.modal', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-modal', function () {
+    return view('pages.bootstrap-modal', ['type_menu' => 'bootstrap']);
 });
-Route::get('/nav', function () {
-    return view('pages.nav', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-nav', function () {
+    return view('pages.bootstrap-nav', ['type_menu' => 'bootstrap']);
 });
-Route::get('/navbar', function () {
-    return view('pages.navbar', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-navbar', function () {
+    return view('pages.bootstrap-navbar', ['type_menu' => 'bootstrap']);
 });
-Route::get('/pagination', function () {
-    return view('pages.pagination', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-pagination', function () {
+    return view('pages.bootstrap-pagination', ['type_menu' => 'bootstrap']);
 });
-Route::get('/popover', function () {
-    return view('pages.popover', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-popover', function () {
+    return view('pages.bootstrap-popover', ['type_menu' => 'bootstrap']);
 });
-Route::get('/progress', function () {
-    return view('pages.progress', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-progress', function () {
+    return view('pages.bootstrap-progress', ['type_menu' => 'bootstrap']);
 });
-Route::get('/table', function () {
-    return view('pages.table', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-table', function () {
+    return view('pages.bootstrap-table', ['type_menu' => 'bootstrap']);
 });
-Route::get('/tooltip', function () {
-    return view('pages.tooltip', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-tooltip', function () {
+    return view('pages.bootstrap-tooltip', ['type_menu' => 'bootstrap']);
 });
-Route::get('/typography', function () {
-    return view('pages.typography', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-typography', function () {
+    return view('pages.bootstrap-typography', ['type_menu' => 'bootstrap']);
 });
 
 

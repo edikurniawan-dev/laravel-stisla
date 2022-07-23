@@ -3,6 +3,7 @@
 @section('title', 'Chart.JS')
 
 @push('style')
+    <!-- CSS Libraries -->
 @endpush
 
 @section('main')

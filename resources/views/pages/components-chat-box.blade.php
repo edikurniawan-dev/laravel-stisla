@@ -3,6 +3,7 @@
 @section('title', 'Chat Box')
 
 @push('style')
+    <!-- CSS Libraries -->
 @endpush
 
 @section('main')
@@ -127,5 +128,8 @@
 @endsection
 
 @push('scripts')
+    <!-- JS Libraies -->
+
+    <!-- Page Specific JS File -->
     <script src="{{ asset('js/page/components-chat-box.js') }}"></script>
 @endpush

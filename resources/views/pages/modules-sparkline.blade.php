@@ -3,6 +3,7 @@
 @section('title', 'Sparkline')
 
 @push('style')
+    <!-- CSS Libraries -->
 @endpush
 
 @section('main')
