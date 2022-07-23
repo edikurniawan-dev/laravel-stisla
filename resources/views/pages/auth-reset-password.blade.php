@@ -66,6 +66,8 @@
 
 @push('scripts')
     <!-- JS Libraies -->
+    <script src="{{ asset('library/jquery.pwstrength/jquery.pwstrength.min.js') }}"></script>
 
     <!-- Page Specific JS File -->
+    <script src="{{ asset('js/page/auth-register.js') }}"></script>
 @endpush

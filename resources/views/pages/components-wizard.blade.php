@@ -245,6 +245,7 @@
                                             <label class="col-md-4 text-md-right mt-2 text-left">Address</label>
                                             <div class="col-lg-4 col-md-6">
                                                 <textarea class="form-control"
+                                                    data-height="150"
                                                     name="address"></textarea>
                                             </div>
                                         </div>

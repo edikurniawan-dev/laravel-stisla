@@ -62,9 +62,9 @@
                         <a class="nav-link"
                             href="{{ url('bootstrap-breadcrumb') }}">Breadcrumb</a>
                     </li>
-                    <li class="{{ Request::is('bootstrap-button') ? 'active' : '' }}">
+                    <li class="{{ Request::is('bootstrap-buttons') ? 'active' : '' }}">
                         <a class="nav-link"
-                            href="{{ url('bootstrap-button') }}">Buttons</a>
+                            href="{{ url('bootstrap-buttons') }}">Buttons</a>
                     </li>
                     <li class="{{ Request::is('bootstrap-card') ? 'active' : '' }}">
                         <a class="nav-link"
