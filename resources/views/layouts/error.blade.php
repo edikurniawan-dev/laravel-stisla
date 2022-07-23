@@ -37,25 +37,20 @@
 
         gtag('config', 'UA-94034622-3');
     </script>
-    <!-- END GA -->
-</head>
+    <!-- /END GA -->
 </head>
 
 <body>
     <div id="app">
-        <div class="main-wrapper">
-            <!-- Header -->
-            @include('components.header')
+        <section class="section">
+            <div class="container mt-5">
+                <!-- Content -->
+                @yield('main')
 
-            <!-- Sidebar -->
-            @include('components.sidebar')
-
-            <!-- Content -->
-            @yield('main')
-
-            <!-- Footer -->
-            @include('components.footer')
-        </div>
+                <!-- Footer -->
+                @include('components.error-footer')
+            </div>
+        </section>
     </div>
 
     <!-- General JS Scripts -->
@@ -72,6 +67,5 @@
     <!-- Template JS File -->
     <script src="{{ asset('js/scripts.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
-</body>
 
 </html>

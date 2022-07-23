@@ -302,19 +302,27 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {{ $type_menu === 'error' ? 'active' : '' }}">
                 <a href="#"
                     class="nav-link has-dropdown"><i class="fas fa-exclamation"></i>
                     <span>Errors</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link"
-                            href="errors-503.html">503</a></li>
-                    <li><a class="nav-link"
-                            href="errors-403.html">403</a></li>
-                    <li><a class="nav-link"
-                            href="errors-404.html">404</a></li>
-                    <li><a class="nav-link"
-                            href="errors-500.html">500</a></li>
+                    <li class="{{ Request::is('error-403') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('error-403') }}">403</a>
+                    </li>
+                    <li class="{{ Request::is('error-404') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('error-404') }}">404</a>
+                    </li>
+                    <li class="{{ Request::is('error-500') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('error-500') }}">500</a>
+                    </li>
+                    <li class="{{ Request::is('error-503') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('error-503') }}">503</a>
+                    </li>
                 </ul>
             </li>
             <li class="nav-item dropdown">

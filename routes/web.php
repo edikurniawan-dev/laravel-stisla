@@ -204,3 +204,17 @@ Route::get('/auth-register', function () {
 Route::get('/auth-reset-password', function () {
     return view('pages.auth-reset-password', ['type_menu' => 'auth']);
 });
+
+// error
+Route::get('/error-403', function () {
+    return view('pages.error-403', ['type_menu' => 'error']);
+});
+Route::get('/error-404', function () {
+    return view('pages.error-404', ['type_menu' => 'error']);
+});
+Route::get('/error-500', function () {
+    return view('pages.error-500', ['type_menu' => 'error']);
+});
+Route::get('/error-503', function () {
+    return view('pages.error-503', ['type_menu' => 'error']);
+});
