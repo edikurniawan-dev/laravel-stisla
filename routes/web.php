@@ -13,14 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::redirect('/', '/general-dashboard');
+
 // Dashboard
+Route::get('/general-dashboard', function () {
+    return view('pages.general-dashboard', ['type_menu' => 'dashboard']);
+});
 Route::get('/ecommerce-dashboard', function () {
     return view('pages.ecommerce-dashboard', ['type_menu' => 'dashboard']);
 });
 
-Route::get('/general-dashboard', function () {
-    return view('pages.general-dashboard', ['type_menu' => 'dashboard']);
-});
 
 // Layout
 Route::get('/default-layout', function () {
@@ -217,4 +219,27 @@ Route::get('/error-500', function () {
 });
 Route::get('/error-503', function () {
     return view('pages.error-503', ['type_menu' => 'error']);
+});
+
+// features
+Route::get('/features-activities', function () {
+    return view('pages.features-activities', ['type_menu' => 'features']);
+});
+Route::get('/features-post-create', function () {
+    return view('pages.features-post-create', ['type_menu' => 'features']);
+});
+Route::get('/features-post', function () {
+    return view('pages.features-post', ['type_menu' => 'features']);
+});
+Route::get('/features-profile', function () {
+    return view('pages.features-profile', ['type_menu' => 'features']);
+});
+Route::get('/features-settings', function () {
+    return view('pages.features-settings', ['type_menu' => 'features']);
+});
+Route::get('/features-setting-detail', function () {
+    return view('pages.features-setting-detail', ['type_menu' => 'features']);
+});
+Route::get('/features-tickets', function () {
+    return view('pages.features-tickets', ['type_menu' => 'features']);
 });

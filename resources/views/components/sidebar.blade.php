@@ -325,24 +325,38 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {{ $type_menu === 'features' ? 'active' : '' }}">
                 <a href="#"
                     class="nav-link has-dropdown"><i class="fas fa-bicycle"></i> <span>Features</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link"
-                            href="features-activities.html">Activities</a></li>
-                    <li><a class="nav-link"
-                            href="features-post-create.html">Post Create</a></li>
-                    <li><a class="nav-link"
-                            href="features-posts.html">Posts</a></li>
-                    <li><a class="nav-link"
-                            href="features-profile.html">Profile</a></li>
-                    <li><a class="nav-link"
-                            href="features-settings.html">Settings</a></li>
-                    <li><a class="nav-link"
-                            href="features-setting-detail.html">Setting Detail</a></li>
-                    <li><a class="nav-link"
-                            href="features-tickets.html">Tickets</a></li>
+                    <li class="{{ Request::is('features-activities') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('features-activities') }}">Activities</a>
+                    </li>
+                    <li class="{{ Request::is('features-post-create') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('features-post-create') }}">Post Create</a>
+                    </li>
+                    <li class="{{ Request::is('features-post') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('features-post') }}">Posts</a>
+                    </li>
+                    <li class="{{ Request::is('features-profile') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('features-profile') }}">Profile</a>
+                    </li>
+                    <li class="{{ Request::is('features-settings') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('features-settings') }}">Settings</a>
+                    </li>
+                    <li class="{{ Request::is('features-setting-detail') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('features-setting-detail') }}">Setting Detail</a>
+                    </li>
+                    <li class="{{ Request::is('features-tickets') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('features-tickets') }}">Tickets</a>
+                    </li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
