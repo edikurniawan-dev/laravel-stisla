@@ -376,8 +376,12 @@
                     </li>
                 </ul>
             </li>
-            <li><a class="nav-link"
-                    href="credits.html"><i class="fas fa-pencil-ruler"></i> <span>Credits</span></a></li>
+            <li class="{{ Request::is('credits') ? 'active' : '' }}">
+                <a class="nav-link"
+                    href="{{ url('credits') }}"><i class="fas fa-pencil-ruler">
+                    </i> <span>Credits</span>
+                </a>
+            </li>
         </ul>
 
         <div class="hide-sidebar-mini mt-4 mb-4 p-3">

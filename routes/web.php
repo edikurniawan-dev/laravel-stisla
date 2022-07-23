@@ -254,3 +254,8 @@ Route::get('/utilities-invoice', function () {
 Route::get('/utilities-subscribe', function () {
     return view('pages.utilities-subscribe', ['type_menu' => 'utilities']);
 });
+
+// credits
+Route::get('/credits', function () {
+    return view('pages.credits', ['type_menu' => '']);
+});
