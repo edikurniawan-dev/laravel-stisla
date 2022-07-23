@@ -243,3 +243,14 @@ Route::get('/features-setting-detail', function () {
 Route::get('/features-tickets', function () {
     return view('pages.features-tickets', ['type_menu' => 'features']);
 });
+
+// utilities
+Route::get('/utilities-contact', function () {
+    return view('pages.utilities-contact', ['type_menu' => 'utilities']);
+});
+Route::get('/utilities-invoice', function () {
+    return view('pages.utilities-invoice', ['type_menu' => 'utilities']);
+});
+Route::get('/utilities-subscribe', function () {
+    return view('pages.utilities-subscribe', ['type_menu' => 'utilities']);
+});

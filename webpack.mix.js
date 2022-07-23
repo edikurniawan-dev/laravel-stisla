@@ -54,6 +54,7 @@ let plugins = [
     "sweetalert",
     "izitoast",
     "weathericons",
+    "gmaps",
 ];
 
 plugins.forEach((plugin) => {

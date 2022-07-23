@@ -359,15 +359,21 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {{ $type_menu === 'utilities' ? 'active' : '' }}">
                 <a href="#"
                     class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i>
                     <span>Utilities</span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="utilities-contact.html">Contact</a></li>
-                    <li><a class="nav-link"
-                            href="utilities-invoice.html">Invoice</a></li>
-                    <li><a href="utilities-subscribe.html">Subscribe</a></li>
+                    <li class="{{ Request::is('utilities-contact') ? 'active' : '' }}">
+                        <a href="{{ url('utilities-contact') }}">Contact</a>
+                    </li>
+                    <li class="{{ Request::is('utilities-invoice') ? 'active' : '' }}">
+                        <a class="nav-link"
+                            href="{{ url('utilities-invoice') }}">Invoice</a>
+                    </li>
+                    <li class="{{ Request::is('utilities-subscribe') ? 'active' : '' }}">
+                        <a href="{{ url('utilities-subscribe') }}">Subscribe</a>
+                    </li>
                 </ul>
             </li>
             <li><a class="nav-link"
