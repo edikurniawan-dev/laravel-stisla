@@ -52,6 +52,7 @@
                                     <div class="form-group mb-0">
                                         <label>Message</label>
                                         <textarea class="form-control"
+                                            data-height="150"
                                             required=""></textarea>
                                     </div>
                                 </div>
@@ -96,6 +97,7 @@
                                     <div class="form-group mb-0">
                                         <label>Message</label>
                                         <textarea class="form-control"
+                                            data-height="150"
                                             required=""></textarea>
                                         <div class="invalid-feedback">
                                             What do you wanna say?
@@ -143,6 +145,7 @@
                                     <div class="form-group mb-0">
                                         <label>Message</label>
                                         <textarea class="form-control is-invalid"
+                                            data-height="150"
                                             required="">Hello, i'm handsome!</textarea>
                                         <div class="invalid-feedback">
                                             Oh no! You entered an inappropriate word.
@@ -197,6 +200,7 @@
                                         <label class="col-sm-3 col-form-label">Message</label>
                                         <div class="col-sm-9">
                                             <textarea class="form-control"
+                                                data-height="150"
                                                 required=""></textarea>
                                             <div class="invalid-feedback">
                                                 What do you wanna say?

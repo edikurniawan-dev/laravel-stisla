@@ -61,7 +61,8 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Textarea</label>
-                                    <textarea class="form-control"></textarea>
+                                    <textarea class="form-control"
+                                        data-height="150"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label class="d-block">Checkbox</label>

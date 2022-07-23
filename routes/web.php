@@ -62,8 +62,8 @@ Route::get('/bootstrap-dropdown', function () {
 Route::get('/bootstrap-form', function () {
     return view('pages.bootstrap-form', ['type_menu' => 'bootstrap']);
 });
-Route::get('/list-bootstrap-group', function () {
-    return view('pages.list-bootstrap-group', ['type_menu' => 'bootstrap']);
+Route::get('/bootstrap-list-group', function () {
+    return view('pages.bootstrap-list-group', ['type_menu' => 'bootstrap']);
 });
 Route::get('/bootstrap-media-object', function () {
     return view('pages.bootstrap-media-object', ['type_menu' => 'bootstrap']);
