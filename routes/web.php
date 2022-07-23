@@ -187,3 +187,20 @@ Route::get('/modules-vector-map', function () {
 Route::get('/modules-weather-icon', function () {
     return view('pages.modules-weather-icon', ['type_menu' => 'modules']);
 });
+
+// auth
+Route::get('/auth-forgot-password', function () {
+    return view('pages.auth-forgot-password', ['type_menu' => 'auth']);
+});
+Route::get('/auth-login', function () {
+    return view('pages.auth-login', ['type_menu' => 'auth']);
+});
+Route::get('/auth-login2', function () {
+    return view('pages.auth-login2', ['type_menu' => 'auth']);
+});
+Route::get('/auth-register', function () {
+    return view('pages.auth-register', ['type_menu' => 'auth']);
+});
+Route::get('/auth-reset-password', function () {
+    return view('pages.auth-reset-password', ['type_menu' => 'auth']);
+});
